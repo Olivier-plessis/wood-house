@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-wood-dark: #8B4513;
+    --color-wood-medium: #DEB887;
+    --color-wood-light: #F5DEB3;
+    --color-leaf-dark: #2F4F4F;
+    --color-leaf-medium: #556B2F;
+    --color-leaf-light: #8FBC8F;
+  }
+  
+  .bg-wood-pattern {
+    background-color: var(--color-wood-light);
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--color-wood-medium) 0,
+      var(--color-wood-medium) 2px,
+      transparent 0,
+      transparent 50%
+    );
+    background-size: 10px 10px;
+  }
