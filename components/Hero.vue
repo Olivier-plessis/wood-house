@@ -116,7 +116,7 @@ const socialProof = [
                  transform transition-transform duration-300"
           :class="{ 'rotate-3 scale-95': isHovered }"
         >
-        <div class="w-full h-full no-3d "  :style="{
+        <div class="w-full h-full no-3d bg-cover bg-center"  :style="{
         backgroundImage: `url(${heroContent.backgroundImage})`,
         transform: isHovered ? 'scale(1.05)' : 'scale(1)',
         filter: 'brightness(0.6)'
