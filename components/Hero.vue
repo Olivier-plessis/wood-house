@@ -13,10 +13,10 @@ const heroContent = {
 const isHovered = ref(false)
 const animationTrigger = ref(0)
 
-const socialProof = [
-  { icon: Leaf, text: '90% Matériaux Recyclés', color: 'green-400' },
-  { icon: Zap, text: '70% Moins de CO2', color: 'yellow-400' },
-  { icon: Rocket, text: 'Technologie de Pointe', color: 'blue-400' }
+const socialProofs = [
+  { icon: Leaf, title: '90% Matériaux Recyclés', description: 'Nous utilisons des matériaux recyclés pour minimiser notre impact environnemental.', color: 'green-400' },
+  { icon: Zap, title: '70% Moins de CO2', description: 'Notre technologie de pointe permet de réduire les émissions de CO2.', color: 'yellow-400' },
+  { icon: Rocket, title: 'Technologie de Pointe', description: 'Nous utilisons la technologie la plus avancée pour créer des maisons intelligentes.', color: 'blue-400' }
 ]
 </script>
 
@@ -70,17 +70,28 @@ const socialProof = [
         </p>
 
         <!-- Social Proof -->
-        <div class="flex space-x-6 mb-8">
+        <div 
+          class="absolute bottom-0 left-0 right-0 
+                 flex flex-wrap justify-center gap-4 md:gap-8 
+                 px-4 md:px-12 py-6 
+                 bg-white/10 backdrop-blur-xl"
+        >
           <div 
-            v-for="(proof, index) in socialProof" 
+            v-for="(proof, index) in socialProofs" 
             :key="index"
-            class="flex items-center bg-white/20 p-4 rounded-xl transform transition-transform hover:scale-105"
+            class="flex items-center space-x-4 
+                   bg-white/10 p-4 rounded-2xl 
+                   w-full sm:w-auto 
+                   transform hover:scale-105 transition-transform"
           >
             <component 
               :is="proof.icon" 
-              :class="`w-10 h-10 mr-3 text-${proof.color} animate-bounce`" 
+              class="w-8 h-8 text-green-400"
             />
-            <span class="text-white font-medium">{{ proof.text }}</span>
+            <div>
+              <p class="text-sm font-bold text-white">{{ proof.title }}</p>
+              <p class="text-xs text-white/70">{{ proof.description }}</p>
+            </div>
           </div>
         </div>
 
