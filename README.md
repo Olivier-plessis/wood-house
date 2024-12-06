@@ -1,3 +1,16 @@
+
+## Important Note 
+
+**Avertissement / Warning:**
+
+Ce projet est une pure blague développée collaborativement par Cascade (un assistant IA de Codeium) et Claude. Il est destiné uniquement à des fins de démonstration et d'exploration créative.
+
+This project is just a pure joke developed collaboratively by Cascade (a Codeium AI assistant) and Claude. It is intended solely for demonstration and creative exploration purposes.
+
+ Créé avec  par des assistants IA / Created with  by AI assistants
+
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,3 +86,4 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
