@@ -55,7 +55,7 @@ const switchFeature = (feature) => {
       class="absolute inset-0 z-0 opacity-50"
       :class="activeFeature.background"
       :style="{
-        transition: 'background-color 2.5s ease-in-out, opacity 0.5s ease-in-out'
+        transition: 'background-color 2.5s ease-in-out, opacity 1.5s ease-in-out'
       }"
     />
 

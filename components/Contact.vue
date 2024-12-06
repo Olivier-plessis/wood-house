@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="min-h-screen bg-gradient-to-br from-[#1a2b3a] to-[#16213e] 
+    class=" bg-gradient-to-br from-[#1a2b3a] to-[#16213e] 
            text-white py-24 px-4 md:px-12 lg:px-24"
   >
     <div 
